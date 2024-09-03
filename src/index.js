@@ -2,18 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import NavBar from "./NavBar/NavBar"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* 
-    ici c'est la page principale (au fait c'est la seul page)
-    on défini les différentes section de la page sous forme de 'components'
-    e.g : 
-    <NavBar/>
-    il y aura un fichier qui s'appelerai Navbar.js, importé ci-dessus, où on définera le html de ce navbar
-    
-    */}
+    {
+      <main className='overflow-x-hidden font-Poppins bg-lightColor dark:bg-darkColor' id="main"> 
+        <NavBar/>
+
+      </main>
+    }
   </React.StrictMode>
 );
 
