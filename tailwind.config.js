@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
+
+import { keepTheme } from "keep-react/keepTheme";
+
+const config = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode : "class",
   theme: {
     extend: {
@@ -27,3 +27,4 @@ module.exports = {
   plugins: [],
 }
 
+export default keepTheme(config);
