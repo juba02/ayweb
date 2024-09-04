@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import NavBar from "./NavBar/NavBar"
+import AboutUs from './AboutUs/AboutUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,7 +11,7 @@ root.render(
     {
       <main className='overflow-x-hidden font-Poppins bg-lightColor dark:bg-darkColor' id="main"> 
         <NavBar/>
-
+        <AboutUs/>
       </main>
     }
   </React.StrictMode>

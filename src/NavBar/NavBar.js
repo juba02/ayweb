@@ -4,12 +4,13 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import logoPrimary from "../assets/logoPrimary.png"
 import logoDark from "../assets/logoDark.png"
+import AboutUs from '../AboutUs/AboutUs.js';
 
 const navLinks = [
     {
         id : 1,
         name : "About Us",
-        link : "#main"
+        link : "#AboutUs"
     },
     {
         id : 2,
