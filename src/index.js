@@ -2,8 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import 'aos/dist/aos.css'; // Importation du CSS d'AOS
+import AOS from 'aos';
 import NavBar from "./NavBar/NavBar"
 import AboutUs from './AboutUs/AboutUs';
+
+AOS.init({
+  duration: 1000, // Durée de l'animation
+});
+
+// AOS.init(); //init animation-on-scroll module
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
